@@ -17,7 +17,8 @@ class ApplicationController < Sinatra::Base
   post '/courses' do
     course = Course.create(
       course_name: params[:course_name],
-      course_period: params[:course_period]
+      course_period: params[:course_period],
+      instructor_id: params[:instructor_id]
     )
     course.to_json
   end
@@ -26,7 +27,8 @@ class ApplicationController < Sinatra::Base
     patched = Course.find(params[:id])
     patched.update(
       course_name: params[:course_name],
-      course_period: params[:course_period]
+      course_period: params[:course_period],
+      instructor_id: params[:instructor_id]
     )
     patched.to_json
   end
@@ -35,7 +37,8 @@ class ApplicationController < Sinatra::Base
     patched = Course.find(params[:id])
     patched.update(
       course_name: params[:course_name],
-      course_period: params[:course_period]
+      course_period: params[:course_period],
+      instructor_id: params[:instructor_id]
     )
     patched.to_json
   end
