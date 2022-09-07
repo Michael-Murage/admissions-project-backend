@@ -205,5 +205,11 @@ class ApplicationController < Sinatra::Base
       deleted.destroy
       deleted.to_json
     end
+    
+    #extra routes
+    get '/rand' do
+      random = rand(000000...240322)
+      {random: random}.to_json
+    end
 
 end
