@@ -13,7 +13,7 @@ gem "rack-contrib"
 # Run common tasks from the command line
 # https://github.com/ruby/rake
 gem "rake"
-
+gem "psych", '~> 4.0.0'
 # Provides functionality to interact with a SQLite3 database
 # https://github.com/sparklemotion/sqlite3-ruby
 
