@@ -8,4 +8,4 @@ test:
 
 production:
   adapter: postgresql
-  database: db/production
+  database: db/production.sqlite3

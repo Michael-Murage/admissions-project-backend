@@ -63,7 +63,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activerecord (~> 6.1)
+  activerecord
   faker
   pg
   pry
