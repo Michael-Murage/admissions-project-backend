@@ -9,7 +9,7 @@ class CreateStudentTable < ActiveRecord::Migration[6.1]
       t.integer(:course_id)
       t.integer(:classroom_id)
       t.integer(:instructor_id)
-      t.string(:admission_number)
+      t.integer(:admission_number)
     end
   end
 end
