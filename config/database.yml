@@ -9,3 +9,8 @@ test:
 production:
   adapter: postgresql
   database: db/production.sqlite3
+  Database: d6ae5n2cl6uihv
+  Host: ec2-3-224-184-9.compute-1.amazonaws.com
+  User: tfvdbdoshwxibg
+  Port: 5432
+  Password: 11fa2cd9b0d1d1443f1f0c8070e390c94e9314a3f9f7793b3a9cdf19e58a21bc
