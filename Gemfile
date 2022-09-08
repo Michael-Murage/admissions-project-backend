@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord"
-
+gem "thin"
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord"
@@ -22,7 +22,7 @@ gem "psych", '~> 4.0.0'
 # https://github.com/jarmo/require_all
 gem "require_all"
 gem "faker"
-
+gem "uri"
 # These gems will only be used when we are running the application locally
 group :development do
   gem "pry"
