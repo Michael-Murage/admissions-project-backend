@@ -212,4 +212,8 @@ class ApplicationController < Sinatra::Base
       {random: random}.to_json
     end
 
+    post '/userdata' do
+      {username: params[:username], pass: params[:password]}.to_json
+    end
+
 end
