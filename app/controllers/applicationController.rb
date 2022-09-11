@@ -152,6 +152,11 @@ class ApplicationController < Sinatra::Base
       student = Student.find(params[:id])
       student.to_json
     end
+
+    get '/edit/:id' do
+      student = Student.find(params[:id])
+      student.to_json
+    end
   
     post '/students' do
       pat = Student.create(
