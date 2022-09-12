@@ -5,7 +5,7 @@ class ApplicationController < Sinatra::Base
 
   # courses table
   get '/courses' do
-    course = Course.all.order(:name)
+    course = Course.all.order(:course_name)
     course.to_json
   end
 
